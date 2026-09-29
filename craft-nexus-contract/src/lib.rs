@@ -42,6 +42,8 @@ mod min_release_window_test;
 mod pagination_boundary_test;
 #[cfg(test)]
 mod diagnostic_scan_test;
+#[cfg(all(test, feature = "wasm-differential-tests"))]
+mod differential_test;
 #[cfg(test)]
 mod differential_upgrade_compatibility_test {
     use super::*;
